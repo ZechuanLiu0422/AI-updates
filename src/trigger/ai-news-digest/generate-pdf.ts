@@ -37,7 +37,7 @@ export const generatePDF = task({
     await browser.close();
 
     return {
-      pdfBuffer: pdfBuffer.toString('base64'),
+      pdfBuffer: Buffer.from(pdfBuffer).toString('base64'),
       dateRange: `${startDate} 至 ${endDate}`,
       summary: generateSummary(grouped),
     };
