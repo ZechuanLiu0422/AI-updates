@@ -6,6 +6,7 @@
     "rss-parser": "^3.13.0"
   },
   "devDependencies": {
+    "@trigger.dev/build": "^4.4.3",
     "@types/node": "^25.5.0",
     "typescript": "^5.9.3"
   }
