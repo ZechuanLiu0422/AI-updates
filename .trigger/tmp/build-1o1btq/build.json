@@ -1,0 +1,136 @@
+{
+  "build": {
+  },
+  "cliPackageVersion": "4.4.3",
+  "config": {
+    "dirs": [
+      "./src/trigger"
+    ],
+    "project": "proj_vzwhsvqkierkorhivzgq"
+  },
+  "configPath": "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/Desktop/ClaudeCodeTesting/TriggerDemo/trigger.config.mjs",
+  "contentHash": "ad0369d7ac0442bcf7b8b154dad66acf",
+  "customConditions": [
+  ],
+  "deploy": {
+    "env": {
+    }
+  },
+  "environment": "dev",
+  "externals": [
+    {
+      "name": "import-in-the-middle",
+      "version": "1.11.0"
+    }
+  ],
+  "files": [
+    {
+      "entry": "src/trigger/ai-news-digest/fetch-news.ts",
+      "out": "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/Desktop/ClaudeCodeTesting/TriggerDemo/src/trigger/ai-news-digest/fetch-news.mjs"
+    },
+    {
+      "entry": "src/trigger/ai-news-digest/generate-pdf.ts",
+      "out": "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/Desktop/ClaudeCodeTesting/TriggerDemo/src/trigger/ai-news-digest/generate-pdf.mjs"
+    },
+    {
+      "entry": "src/trigger/ai-news-digest/send-email.ts",
+      "out": "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/Desktop/ClaudeCodeTesting/TriggerDemo/src/trigger/ai-news-digest/send-email.mjs"
+    },
+    {
+      "entry": "src/trigger/ai-news-digest/weekly-digest.ts",
+      "out": "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/Desktop/ClaudeCodeTesting/TriggerDemo/src/trigger/ai-news-digest/weekly-digest.mjs"
+    }
+  ],
+  "indexWorkerEntryPoint": "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/.npm/_npx/f51a09bd0abf5f10/node_modules/trigger.dev/dist/esm/entryPoints/dev-index-worker.mjs",
+  "otelImportHook": {
+    "include": [
+    ]
+  },
+  "outputHashes": {
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/.npm/_npx/f51a09bd0abf5f10/node_modules/trigger.dev/dist/esm/entryPoints/dev-index-worker.mjs": "ARj6cTzEzAw",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/.npm/_npx/f51a09bd0abf5f10/node_modules/trigger.dev/dist/esm/entryPoints/dev-index-worker.mjs.map": "EyID14GB0ZY",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/.npm/_npx/f51a09bd0abf5f10/node_modules/trigger.dev/dist/esm/entryPoints/dev-run-worker.mjs": "G07A2Crwdp8",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/.npm/_npx/f51a09bd0abf5f10/node_modules/trigger.dev/dist/esm/entryPoints/dev-run-worker.mjs.map": "2+HbqneC6K4",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/Desktop/ClaudeCodeTesting/TriggerDemo/src/trigger/ai-news-digest/fetch-news.mjs": "vJtM1F9NuqY",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/Desktop/ClaudeCodeTesting/TriggerDemo/src/trigger/ai-news-digest/fetch-news.mjs.map": "0b4tlwmkM3g",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/Desktop/ClaudeCodeTesting/TriggerDemo/src/trigger/ai-news-digest/generate-pdf.mjs": "n00cqro85kw",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/Desktop/ClaudeCodeTesting/TriggerDemo/src/trigger/ai-news-digest/generate-pdf.mjs.map": "0b4tlwmkM3g",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/Desktop/ClaudeCodeTesting/TriggerDemo/src/trigger/ai-news-digest/send-email.mjs": "aC7qFSHaEV8",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/Desktop/ClaudeCodeTesting/TriggerDemo/src/trigger/ai-news-digest/send-email.mjs.map": "0b4tlwmkM3g",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/Desktop/ClaudeCodeTesting/TriggerDemo/src/trigger/ai-news-digest/weekly-digest.mjs": "BdFDrQKjAFs",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/Desktop/ClaudeCodeTesting/TriggerDemo/src/trigger/ai-news-digest/weekly-digest.mjs.map": "xoxCIvIwADE",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/Desktop/ClaudeCodeTesting/TriggerDemo/trigger.config.mjs": "iVYDkb1+Gy8",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/Desktop/ClaudeCodeTesting/TriggerDemo/trigger.config.mjs.map": "6Id+EAfTQlQ",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/chunk-3VTTNDYQ.mjs": "4BFFwYbGU2A",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/chunk-3VTTNDYQ.mjs.map": "ileZ64FgkTs",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/chunk-4AC5RDQC.mjs": "8il3jk9Tpj0",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/chunk-4AC5RDQC.mjs.map": "IvKcXdsESCU",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/chunk-6H3L52BW.mjs": "EAvfaDlUV3Y",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/chunk-6H3L52BW.mjs.map": "Y9t3pNGOCsg",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/chunk-6VJ5EN34.mjs": "h19AoHW0h8s",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/chunk-6VJ5EN34.mjs.map": "QdNGA3Fpe90",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/chunk-EXKTB4IK.mjs": "92dcYq9Kur4",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/chunk-EXKTB4IK.mjs.map": "a5q/qX9qtjg",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/chunk-GT2KMGP3.mjs": "vCyBiK5oMZo",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/chunk-GT2KMGP3.mjs.map": "nE69uc5NHSs",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/chunk-HHQP57SM.mjs": "a7hav/ggIs4",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/chunk-HHQP57SM.mjs.map": "9G1ECG25wYo",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/chunk-SZ6GL6S4.mjs": "PQqDyI4/mbI",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/chunk-SZ6GL6S4.mjs.map": "LMPzUuAiOIM",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/chunk-UHJSMIKS.mjs": "PyAzkpTctPA",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/chunk-UHJSMIKS.mjs.map": "XmS7XnT7u34",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/chunk-WH6KQTOJ.mjs": "qSvwS9Gbm+w",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/chunk-WH6KQTOJ.mjs.map": "jCnBI2W7quQ",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/crypto.node-KKQBIZYC.mjs": "avSsy66zgAY",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/crypto.node-KKQBIZYC.mjs.map": "5Kd4HvgIawI",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/crypto.node-SMGKTDKN.mjs": "6DOFQiL2fGk",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/crypto.node-SMGKTDKN.mjs.map": "0b4tlwmkM3g",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/esm-2YWHC6L4.mjs": "CPq9Q1V4Fz0",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/esm-2YWHC6L4.mjs.map": "VON93E1In1A",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/esm-4Q3JH7IT.mjs": "TOxwrpPiQig",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/esm-4Q3JH7IT.mjs.map": "gj8v8i+y/rw",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/getMachineId-bsd-CGJT2UV3.mjs": "CwWsWht+aTo",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/getMachineId-bsd-CGJT2UV3.mjs.map": "FxfhEOa8Svo",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/getMachineId-darwin-EC26PHRL.mjs": "AZbzsvrDoJ8",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/getMachineId-darwin-EC26PHRL.mjs.map": "pMX6IDWn3sk",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/getMachineId-linux-RC66NAR6.mjs": "IXbe7IOULqo",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/getMachineId-linux-RC66NAR6.mjs.map": "cCi4mGu0ubA",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/getMachineId-unsupported-IQDRYROR.mjs": "TbNy+Ye2ohk",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/getMachineId-unsupported-IQDRYROR.mjs.map": "Dzc8V7mQv88",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/getMachineId-win-377JFQD3.mjs": "qGqgsZHQ+RI",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/getMachineId-win-377JFQD3.mjs.map": "j2vmXva5ZqU",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/s2s-XFHUVMA2.mjs": "/vMT7LOlL1s",
+    "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/s2s-XFHUVMA2.mjs.map": "PIXpC9vx69U"
+  },
+  "outputPath": "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq",
+  "packageVersion": "4.4.3",
+  "runWorkerEntryPoint": "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/.npm/_npx/f51a09bd0abf5f10/node_modules/trigger.dev/dist/esm/entryPoints/dev-run-worker.mjs",
+  "runtime": "node",
+  "sources": {
+    "package.json": {
+      "contentHash": "2c98a0a7cb40f9a7eca3f4d536b0c377",
+      "contents": "eJx1jsEKwjAQRO/5imXPdduYYLUnD36HUNylFDUt2RKQ0n8XUutB8PreDDOzAUCWUQJLuPWi2MBsAADwPMW+6yQSSyqV79gAXj15clisCR4mCSlzW5Mju4kwsDzb/iExyyNVtN9cFJXAmR/oRP7LVXdjG/XTcWQdVWgAlmL9mC5/br5G0fJnsqaKrM11s5g3aAY8Ww=="
+    },
+    "src/trigger/ai-news-digest/fetch-news.ts": {
+      "contentHash": "421567ec05d7dd86f821b965f5d8f071",
+      "contents": "eJytl0+PGzUUwO/5FI9RhWZodrLAASlpWlZbWlbdQrUpXKpK6515SUxm7JHt2WzYRuKCkABxqjgiIYFYISGORXweAv0YyH8yY2ezVVfqJZN5tt8/v/ezh5YVFwrOQRE5gyWMBS8h+lAJOpmgSHM87cl81jt9Pxp0qJ37iAiJws0UUu5URhANOh08MzMoUyjGJEP4BOfyQGEJ5x0ARVWBfZBKUDYZdABqUfivktciCyZU9UlB5RTzPRVMrMuSiMUdX5YRhRMeCJeNQxlnUsEYVTbVHsHQhBtrp2jeh8iM7BC6w3Auo24HQNSsD0QuWAZxAsPbJgBwiiSeIrtLFnJvwmEIDOdwlyiMk4GZ5A+nEpUZC4QTJ0xgBz5IBh1PNykK7WK/Sd2TpzCEJ0/dpF4P7mlnbfo/JtkMhZ7paZgyFyOZE+qibicGjjiHnc20quU0TtPUaki2mjwajWCMmPsWhZSXTR6NRvf0vNcx6BR4FvftdtIvEQjLIce8rgqqN9mzmzWTchh6byZOZ8NZtAs8NXqF92qWePrWrghUtWDBQq1w2e0s9RRbIeOaZYpydjnXlOmC1nud9OGR4CWVeKvdWVtW1rcZLuZc5DqLT6K9g6gL0eHhQ/0gE2RK/7n/6LF+7BekztEIsKSM6n8lyaaUIRRIBKNsYtbVipdEOxY9HTR22JXVpcQiKHOBsuJMYrivcTRVqpL9Xm9qAjU9k46pwBMikfI042XvdLeneCUVFxRl+oXkLAo2Qo8sDvK2ZNa2zNw4ASKB1eUJii2VT4VU8O7uLjj9ZnjMBcRWOc2BjxsTqSxohvFuVy9JEhdh4MjR9kCPXy9QqrDs3Tin+dI4f+wCDSw0mgN7XrCELVycAHQM8Vt22bNnYP+lBp7eey2KRFtQlNXYLLUmPWz6eForKhHe0cnYbTzVFv1Ft8BU7pUGrDND8FxLFT/kcxT7RDYgbIhE5ANb3TBs6jyVvMR4NtdwtRooy4o6RxnP5qG2JAly06prdxNMXVugtDLvzGkc7Xqj7gBy+fRH1mdR1HZz5I8HJ5P3kip+MPp0ZE6gOGlXLJuULDvr36VGVjaFGIXgIvF6jxeYGmEcfaQftiApm3jE70ddsAsNkHSCHKx0Jszpt41OLZavwSZ7wrtasue/3eP1wYqWWyaAc5vWBhPz+TxVUzxFMUHTM0LKHmU5nqVnZRF121w/niJ8rqdFGrDbdCnMppmoWTY1mrThXqABs+m+GXcqLD1eSb6tACaGqkVRBgCeVOaRNQCeXAPAnQBSJrK157DUxDJpXJdBC2M/yw1H7I6k5vHZ0WGscdA0ic9CfflyulP9Iv2eMaTRUg8v5rWgbLal+7cDxqyo6hNdSnCn5Y0vT6B/6Z50PfJssqd1ezt6mksCZwqZ9tM65N5HjFYVKh1yFCWvVnF9fiVar7MUyBMvnqtZdhXNGp61wXeDYdMtzQ6GY7bUQtl1MWb02Nu3sxOm804q6xN7/9Yn7nu7u8HipZfaZcjDrSzcpOHxBg3NZVTfSm+c2+iW/WOfio6z29jYUHHj2rgJiSQgRotEw4QHATLWlPDavgvRnIvZuOBz/V9UxL+KFUUZaHC4eRVleI6FIRNhk5pMEKzEU6o4LwKtWmDcqir9qATP60xZJYaU2jEskEh0mPJylZakMn2z+Q2k8KztKduTNyGCCG46mSsT12CXOqyz7oAgkUFT4dlG77Rl4Tw8hzQ1VOs23399iPYOYE8rhbfh5Te/r769WH3/YwRLVxCAhURj2Uv/G7G7+uW3l3/+8fLiq38vfl799F18ePgw2WbX36E3FPDqxa+rr1/889cPq7+f//f8orUafMVcb7VuVr9RNr+WXrdTJCJzV4cRqluWDrctZf1KG9NCodhabDNcrIlfi2LQ1I5WnU6JjGe4SJK1tjEpJK4/xZGlJM/NhIGfCyVqbKP8H3oXccw="
+    },
+    "src/trigger/ai-news-digest/generate-pdf.ts": {
+      "contentHash": "5df2ee0f71a5a0dec72dae0ba39497d3",
+      "contents": "eJyVVt1v21QUf/dfcXDzYGe2M2lvCZ6oVnVUGqNaH3hYJ8W1rxM3tq9173WzkFkaEx2jQogJNB66qQKpwAOfmlYhQPwzI2n3xL+A7ocdp8mq4Sffc3/nnN/5tKMkw4TBGJhHB1BASHAC+juMRL0eIk6A9lo0GLT2rugdLSqxN9GQbjCUVHinFSLm9+0UDamzS2fYJngUQqpg4fmbzGN9dcdf9Y6mRSlDJPR8BNdRiojH0Oba+qY3irEXwFgD4D7aFYXbdzoaAGUeYWseQ22gjERpjwtRGsyLCk1Dd4VzH6eUQW/mAFyRAIM7iII26OWd7UUiKjsLQt3SAEietsGjo9QHI5O02kuomuBeFXRBORsL4taMqlUShAJcUKY6mlBpteA6wXkmdGBnBL7HUA+TUc1gjwNQ0IZbyMckeFtGadUycxVcGBcdoRNiAoZUjHjlcChsm4pjabT0A66AOdX53j3QJ/sn//z5RO8ojSgE4y3F4nYJvGPCgghckGXiz8Ktk+W0b3BvpsQUVQ5uREkk+VLIEJnPQi2iimWUlvZngS2js0iCxpGPjMsWXLm8QKOsLiQeGQR4mPJkMZQywWFzbb1WlQriVu31nhJdk0qGcr6sFcxZ/be8PQQMA0NJBmEUo5oTLluLCLigt1iSqYooAsEmHypXzJazi6PUUHALumUzN8bcm5PioWEWThJ0zbqJLAgvsLG6YX+A0CAe2WtRD1FmN8ZVIIXNsN0Yq2gKJwvCbhlTSJ0hiRhaj2K0NUp9QzK1qpTVgn8XEQRDBEOcxwH4XhwD6yNODOgg4ifMue4hUss4w1UtWi1YxwRSPLSAIJaTVOp7rE8FQAnLHlERW+qomKlT4DF0y0t7qA3deqxw9slzmAXbLfE0TxKPjNpVA2xJQVl4UwLFYBaWVvC4wzz1WYTT1zaNBm8y8NayXWgt7kLNLN9ECmLE+wZc6K7A6sbZi4/Pfv5l8viH6cHxdrqddjnRJIBLLnSbzenB8eTxAb99etRstuGCjJxXtm1biTTZ4jIvM8DKCkyf/shtf/fg7PtHlf6bjXrpBZrNxrjEFZLj4sDHKO2xfgHTZ9/IgJWvYkZnOz3PWFXj3Eb+X/RWVqDGbmZ96Ypesl3HVY8qc9ye2NUsYnEt6TVQszl9djz94wuZCwGmOCc+KgCWor8+rqqboiHwaooN7WT5ThzRPgpWmekwfAP7Xoz49ZboJkP/sG9fu6mbrzH86su/p58f12jkJJ7LgfyqSIayO2YRV3bKECRgPuJCm/c5q6C8VQg1/0kg/goWpu/cxF40cvOTpPYzZl4MLry/s4t85ux5cY5oNf4OQUHuI8OgeWLJr5v4W6B5ApfkWXWnBfJjpNh25XBM9n+bfnXy6vDh5NGv0BgLZ6KPVzdOD3+f7D+X/fzvX59NT16cHj5pjBWPARrVWIi1rr+8/5FuFqc/ffrq24eTo6OX9x90eUr+AwXBaNI="
+    },
+    "src/trigger/ai-news-digest/send-email.ts": {
+      "contentHash": "61d6e43060da77efa5d4a8692e191fb9",
+      "contents": "eJxtUk1v00AQvftXTC0OCardAzeHVA3UlaLSKmqREKKo3dpjd2m8tnbXSaPUElSlgnLqjaIiTkE9oOYECLWIHwP54NS/gOzYTkJ7252Z9+bNvKFe4HMJbZBE7EIEDvc9UBckp66LXLexMSfs3bnGPbWk0Kx2DQUyO6/myXdccBeIAEekWUeoJUWhTCJ3iIVgeoTWa6RV94kNbQUgsJ0akTsGCMkpc0sKgE0krhHm4mRQhJ5HeGscihQF95KOls+EhFhFwg7lZJxCzE5tA9Q4oxGqMWwKDeMSdVYB4CEzgIgWs6AQjBQZU/qKUJ5PNELaYjRqJaDL2IIyBNy3UAgdWUNfM9fN1cXNSq26uWw+LU2BLBpQZPIG4mG1VjVXH2+aK5Xqo5KSYKgDhZmpPvv7MJNzFFM9AHKH+01g2ASTc58X1BUqBGUuTCsBn8N/ndTiSF6k3BgNygnjyOHCpIxiabI6sJ0HoeMghzI4QudI7CVax/UWs7JV6qmxGZA0Cc3a6IkJQk+6ZAPF92KAWqnCKjYF3PfZtk+4TZm7kKJsbMwnziXz+8Z4tVlQhNsv0JIGbFWqw6+Hw4tu7+S8f9wBDe60M2H5eUVbORnuxaD+wXmv8/P66tUG22DDX6f9993+2Zfeyfngw+E04fXVm9sIr6/e/n55EKPH2fRwo4Sz+3lwedQ7et27+DHsfu9/6gzO3v09Pfxz+a22uNQ/7vROjlOCQefjSEsukkhJrB0PmRQGPEuDkB9EskNaR0Y8TBagPUHcrbe0ReqikNptemOTcv7UXolMGmOHx9koez4fPaLMWo4y5AzaIEIrPm8DJA9xduLyo/jiolklhvwDdHGQKA=="
+    },
+    "src/trigger/ai-news-digest/weekly-digest.ts": {
+      "contentHash": "17847224d27129aac698f5cdd954a3c5",
+      "contents": "eJyNVEtvm0AQvvMrpqgHiGwcN4eqWK6a+lH1kNaKU/VQVcqKHeONYUG7Q1zL4r9XuzxDkyoX2J3n930zINI8UwRn0NEeeZGghhJ2KkvB/URKxDGqgOPjRPPD5PHKnTmiSdghRftveOwSgom1jSUedfCg+8ExSlSMcLNc98Ib6zjnu0GCRslXKRNJL9zYxmiMVbCDf2x0lElNcEQ8JKeliFETzDs+ATF98M4OgOAhuExYfOMqfMxtvDtyACKVyRDcS5jCBVzA1B3BZAKrR1QnuMkkZydgBFO4voEfdwvwPpjTZxQPQsZAIkXfAVCFDIHpk4zA82H+EUxjMIUWLImKhBECNw/FZIzWV8FHyZfGPgeJRzBHz5/1/JqYohciWl+g0b69zhLXFh/G8N6fOcOSW1JGrTaesq/b71tSQsaeH+g8EeS5d67/6/L37CncKrPG/f+8RoMtYQ7TENZmTwwN3Stprreoi8SMjx2ZoG7HgnoXryX/yQR557KmLnbgvekyg+zg15ID0F5lRyvWSqlMee6aiQQ5UFYVth3dulDpDKBUOrd1C8oL6hTIEgySLPbuLRXk8PZs1z5BGdO+rCoIwlTf+wP+70L4Ui8+bJbrXtuc7wYC9L6bfySoWZpOo/rcjjFsh9u46jmF9eQqc9lgszK27V+rYtyj8ayOZ0Npw2g/skt/a3Z+BLpIU6ZOUMIcej1rhZ9odRXCFiUH+9X318/cB1q1v4yXlGqw1NcOUaNehes5aXr9XiuObnEPpFFIhZJtCV1EEWodAqmihWKGusgKSSH01qrxKoxELtB4nwCzCgat9wWipUFTjhzD8C8VWt3F"
+    },
+    "trigger.config.ts": {
+      "contentHash": "86c0ece04615a7a382cd15d5cdad9ca6",
+      "contents": "eJxlUMFOwzAMvecrrJxAqtZCb9mFiV124MYNIRQatzNdks5Jw9Sp/45aWgTiYlvv+b1nmWznOcIVDNbk8NG7mhoYoWZvQT5EpqZB3hhMeTBtnkq5FQIvs8hgrftT/CO9uQqAjv0HVlGBnKa3NHweQzq3hNx6PlIamrPMBIDVl33POpJ3CsqimDDGyIRBwWQEgE6/n9Ac3B6Tgsg9ZjO+ZK9rs9cuRrRdDArKbEXJPZNF38eDewoK7orvlEXxj/sha11FzwruV4C1M97SgL+vGKc2F0McFLzITR64ype3yddMjLdb8QXyWG3e"
+    }
+  },
+  "target": "dev"
+}

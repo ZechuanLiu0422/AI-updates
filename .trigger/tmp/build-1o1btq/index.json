@@ -1,0 +1,75 @@
+{
+  "configPath": "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/Desktop/ClaudeCodeTesting/TriggerDemo/trigger.config.mjs",
+  "customConditions": [
+  ],
+  "queues": [
+  ],
+  "runtime": "node",
+  "runtimeVersion": "24.14.0",
+  "tasks": [
+    {
+      "entryPoint": "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/Desktop/ClaudeCodeTesting/TriggerDemo/src/trigger/ai-news-digest/fetch-news.mjs",
+      "filePath": "src/trigger/ai-news-digest/fetch-news.ts",
+      "id": "fetch-ai-news",
+      "maxDuration": 300,
+      "retry": {
+        "factor": 2,
+        "maxAttempts": 3,
+        "maxTimeoutInMs": 10000,
+        "minTimeoutInMs": 1000,
+        "randomize": true
+      }
+    },
+    {
+      "entryPoint": "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/Desktop/ClaudeCodeTesting/TriggerDemo/src/trigger/ai-news-digest/generate-pdf.mjs",
+      "filePath": "src/trigger/ai-news-digest/generate-pdf.ts",
+      "id": "generate-ai-news-pdf",
+      "maxDuration": 300,
+      "retry": {
+        "factor": 2,
+        "maxAttempts": 3,
+        "maxTimeoutInMs": 10000,
+        "minTimeoutInMs": 1000,
+        "randomize": true
+      }
+    },
+    {
+      "entryPoint": "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/Desktop/ClaudeCodeTesting/TriggerDemo/src/trigger/ai-news-digest/send-email.mjs",
+      "filePath": "src/trigger/ai-news-digest/send-email.ts",
+      "id": "send-ai-news-email",
+      "maxDuration": 300,
+      "retry": {
+        "factor": 2,
+        "maxAttempts": 3,
+        "maxTimeoutInMs": 10000,
+        "minTimeoutInMs": 1000,
+        "randomize": true
+      }
+    },
+    {
+      "entryPoint": "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/Desktop/ClaudeCodeTesting/TriggerDemo/src/trigger/ai-news-digest/weekly-digest.mjs",
+      "filePath": "src/trigger/ai-news-digest/weekly-digest.ts",
+      "id": "ai-news-weekly-digest",
+      "maxDuration": 300,
+      "retry": {
+        "factor": 2,
+        "maxAttempts": 3,
+        "maxTimeoutInMs": 10000,
+        "minTimeoutInMs": 1000,
+        "randomize": true
+      },
+      "schedule": {
+        "cron": "0 1 * * 1",
+        "timezone": "UTC"
+      },
+      "triggerSource": "schedule"
+    }
+  ],
+  "timings": {
+    "src/trigger/ai-news-digest/fetch-news.ts": 5.719666999999987,
+    "src/trigger/ai-news-digest/generate-pdf.ts": 0.33550000000001035,
+    "src/trigger/ai-news-digest/send-email.ts": 5.404875000000004,
+    "src/trigger/ai-news-digest/weekly-digest.ts": 0.29916699999998286
+  },
+  "workerEntryPoint": "/Users/agent/Desktop/ClaudeCodeTesting/TriggerDemo/.trigger/tmp/build-1o1btq/.npm/_npx/f51a09bd0abf5f10/node_modules/trigger.dev/dist/esm/entryPoints/dev-run-worker.mjs"
+}
