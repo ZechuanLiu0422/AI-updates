@@ -49,8 +49,11 @@ function generateHTMLContent(
   startDate: string,
   endDate: string
 ): string {
-  let html = `<!DOCTYPE html><html><head><meta charset="UTF-8"><style>
-    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+  let html = `<!DOCTYPE html><html><head><meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap');
+    body { font-family: 'Noto Sans SC', 'Microsoft YaHei', sans-serif; margin: 40px; line-height: 1.6; }
     h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
     h2 { color: #34495e; margin-top: 30px; border-left: 4px solid #3498db; padding-left: 10px; }
     h3 { color: #555; margin-top: 20px; }
