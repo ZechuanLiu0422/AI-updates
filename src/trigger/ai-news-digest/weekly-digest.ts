@@ -35,11 +35,11 @@ export const weeklyDigest = schedules.task({
       throw new Error("Failed to generate PDF");
     }
 
-    const { pdfPath, dateRange, summary } = pdfResult.output;
+    const { pdfBuffer, dateRange, summary } = pdfResult.output;
 
     // Step 3: Send email
     const emailResult = await sendEmail.triggerAndWait({
-      pdfPath,
+      pdfBuffer,
       dateRange,
       summary,
     });

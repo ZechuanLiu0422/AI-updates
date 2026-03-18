@@ -1,9 +1,8 @@
 import { task } from "@trigger.dev/sdk/v3";
 import { Resend } from "resend";
-import * as fs from "fs";
 
 interface EmailPayload {
-  pdfPath: string;
+  pdfBuffer: string;
   dateRange: string;
   summary: string;
 }
@@ -20,7 +19,7 @@ export const sendEmail = task({
 
     const resend = new Resend(resendApiKey);
 
-    const pdfBuffer = fs.readFileSync(payload.pdfPath);
+    const pdfBuffer = Buffer.from(payload.pdfBuffer, 'base64');
 
     await resend.emails.send({
       from: "AI News <onboarding@resend.dev>",

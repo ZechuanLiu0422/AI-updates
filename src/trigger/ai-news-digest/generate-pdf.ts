@@ -1,7 +1,6 @@
 import { task } from "@trigger.dev/sdk/v3";
 import { NewsItem } from "./fetch-news.js";
-import * as fs from "fs";
-import * as path from "path";
+import puppeteer from "puppeteer";
 
 interface GeneratePDFPayload {
   news: NewsItem[];
@@ -27,62 +26,62 @@ export const generatePDF = task({
       grouped[category] = grouped[category].slice(0, 30);
     }
 
-    // Generate markdown content for PDF
-    const markdown = generateMarkdownContent(grouped, startDate, endDate);
+    // Generate HTML content
+    const html = generateHTMLContent(grouped, startDate, endDate);
 
-    // Save to temp file
-    const tempDir = "/tmp";
-    const mdPath = path.join(tempDir, `ai-news-${Date.now()}.md`);
-    const pdfPath = path.join(tempDir, `AI-Weekly-Digest-${startDate}-to-${endDate}.pdf`);
+    // Generate PDF using puppeteer
+    const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
+    const page = await browser.newPage();
+    await page.setContent(html, { waitUntil: 'networkidle0' });
+    const pdfBuffer = await page.pdf({ format: 'A4', printBackground: true });
+    await browser.close();
 
-    fs.writeFileSync(mdPath, markdown);
-
-    // Here we would call the pdf skill to convert markdown to PDF
-    // For now, return the paths
     return {
-      pdfPath,
-      mdPath,
+      pdfBuffer: pdfBuffer.toString('base64'),
       dateRange: `${startDate} 至 ${endDate}`,
       summary: generateSummary(grouped),
     };
   },
 });
 
-function generateMarkdownContent(
+function generateHTMLContent(
   grouped: Record<string, NewsItem[]>,
   startDate: string,
   endDate: string
 ): string {
-  let md = `# AI资讯周报\n\n`;
-  md += `**报告周期**: ${startDate} 至 ${endDate}\n\n`;
-  md += `---\n\n`;
+  let html = `<!DOCTYPE html><html><head><meta charset="UTF-8"><style>
+    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+    h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+    h2 { color: #34495e; margin-top: 30px; border-left: 4px solid #3498db; padding-left: 10px; }
+    h3 { color: #555; margin-top: 20px; }
+    .meta { color: #7f8c8d; font-size: 0.9em; }
+    .summary { background: #ecf0f1; padding: 10px; border-radius: 5px; margin: 10px 0; }
+    hr { border: none; border-top: 1px solid #bdc3c7; margin: 20px 0; }
+  </style></head><body>`;
 
-  // Summary
-  md += `## 本周概览\n\n`;
+  html += `<h1>AI资讯周报</h1>`;
+  html += `<p><strong>报告周期</strong>: ${startDate} 至 ${endDate}</p><hr>`;
+
+  html += `<h2>本周概览</h2><ul>`;
   for (const category in grouped) {
-    md += `- **${category}**: ${grouped[category].length} 条资讯\n`;
+    html += `<li><strong>${category}</strong>: ${grouped[category].length} 条资讯</li>`;
   }
-  md += `\n---\n\n`;
+  html += `</ul><hr>`;
 
-  // Content by category
   for (const category in grouped) {
-    md += `## ${category}\n\n`;
-
+    html += `<h2>${category}</h2>`;
     for (const item of grouped[category]) {
-      md += `### ${item.title}\n\n`;
-      md += `**来源**: ${item.source}  \n`;
-      md += `**日期**: ${new Date(item.publishedAt).toLocaleDateString("zh-CN")}  \n`;
-      md += `**链接**: ${item.url}\n\n`;
-
+      html += `<h3>${item.title}</h3>`;
+      html += `<p class="meta"><strong>来源</strong>: ${item.source} | <strong>日期</strong>: ${new Date(item.publishedAt).toLocaleDateString("zh-CN")} | <strong>链接</strong>: <a href="${item.url}">${item.url}</a></p>`;
       if (item.summary) {
-        md += `${item.summary}\n\n`;
+        html += `<div class="summary">${item.summary}</div>`;
       }
-
-      md += `---\n\n`;
+      html += `<hr>`;
     }
   }
 
-  return md;
+  html += `</body></html>`;
+  return html;
 }
 
 function generateSummary(grouped: Record<string, NewsItem[]>): string {
